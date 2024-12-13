@@ -13,10 +13,10 @@ export class Order {
   @ManyToOne(() => Product, (product) => product.id)
   product: Product;
 
-  @Column()
+  @Column({nullable: false})
   quantity: number;
 
-  @Column()
+  @Column({nullable: false})
   status: string; // e.g., "Pending", "Delivered"
 
   @Column()

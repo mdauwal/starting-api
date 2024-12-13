@@ -19,11 +19,12 @@ import { ProductsService } from './products/products.service';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: '3001', // Change to your database host
-      port: 5432, // Default PostgreSQL port
-      username: 'your_username', // Replace with your database username
-      password: 'your_password', // Replace with your database password
-      database: 'afrifarma', // Replace with your database name
+      host: 'localhost', 
+      port: 5432, 
+      username: 'MD Auwal', 
+      password: 'postgres',
+      database: 'postgres',  
+      // entities: [ ],
       autoLoadEntities: true, // Automatically load entities
       synchronize: true, // Set to false in production to avoid data loss
     }),
